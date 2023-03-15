@@ -78,13 +78,13 @@
     font-size: 30px;font-weight: 700; line-height: 65px;
     width: 140px; height: 60px; background: #03009B66;
 }
-.works .right .arrow .prev {margin-left: 15px;}
+.works .right .arrow .prev {margin-left: 15px; cursor: pointer;}
 .works .right .arrow .prev::after {
     content: ""; display: inline-block; 
     width: 1.5px; height: 25px; background: #fff;
     margin-left: 20px;
 }
-.works .right .arrow .next {margin-left: 15px;}
+.works .right .arrow .next {margin-left: 15px; cursor: pointer;}
 /* works */
 
 .master {width: 100%;height: 920px; position: relative;overflow: hidden;}
@@ -114,8 +114,8 @@ transition:0.4s}
 .master ul li:nth-child(3) .about {opacity: 0;}
 .master ul li a img {width: 1000px;height: 470px;}
 .master ul li a .about {
-    width: 500px; height: 230px; background: #00529B66;
-    padding-left: 30px;padding-top: 25px; box-sizing: border-box; 
+    width: 500px; background: #00529B66;
+    padding: 30px; box-sizing: border-box; 
     position: absolute;right: -50px;;bottom:-160px; 
 }
 .master ul li a .about h3 {font-size: 30px;font-weight: 500;margin-bottom: 25px;color:#fff; line-height: 1;}
@@ -179,7 +179,11 @@ transition:0.4s}
     padding: 70px 70px 0 70px;background: #fff;
     height: 480px;
 }
-.news ul li .report strong {font-size: 20px;font-weight: 700;color:#00529B;}
+.news ul li .report strong {
+    font-size: 20px;font-weight: 700;color:#00529B;
+    border-bottom: 3px solid #00529B;
+    padding-bottom: 5px;
+}
 .news ul li .report h3 {
     margin-top: 20px;margin-bottom: 40px;font-size: 20px;
     cursor: pointer;
@@ -236,7 +240,7 @@ transition:0.4s}
     margin-bottom: 45px;margin-top: 15px;
 }
 #footer p > span {color:#828080; margin-left: 10px;}
-#footer .info {color:#000;display: flex;}
+#footer .info {color:#fff;display: flex;}
 
 #footer .info p {font-size: 15px;font-weight: 700;margin-right: 15px;}
 #footer .info p::after{
